@@ -1,4 +1,8 @@
 package com.min.cleanmvvm.ui.main
 
-class MainUiState {
-}
+import com.min.cleanmvvm.domain.model.User
+
+data class MainUiState(
+    val isLoading: Boolean = false,
+    val users: List<User> = emptyList()
+)

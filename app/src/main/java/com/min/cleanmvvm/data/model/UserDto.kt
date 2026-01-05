@@ -1,4 +1,10 @@
 package com.min.cleanmvvm.data.model
 
-class UserDto {
+import com.min.cleanmvvm.domain.model.User
+
+data class UserDto(
+    val id: Int,
+    val name: String
+) {
+    fun toDomain() = User(id, name)
 }

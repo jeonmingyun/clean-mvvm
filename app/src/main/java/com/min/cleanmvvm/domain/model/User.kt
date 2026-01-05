@@ -1,4 +1,6 @@
 package com.min.cleanmvvm.domain.model
 
-class User {
-}
+data class User(
+    val id: Int,
+    val name: String
+)

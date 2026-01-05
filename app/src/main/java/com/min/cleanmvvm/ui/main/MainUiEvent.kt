@@ -1,4 +1,5 @@
 package com.min.cleanmvvm.ui.main
 
-class MainUiEvent {
+sealed class MainUiEvent {
+    object ShowToast : MainUiEvent()
 }

@@ -1,4 +1,7 @@
 package com.min.cleanmvvm.domain.repository
 
-class UserRepository {
+import com.min.cleanmvvm.domain.model.User
+
+interface UserRepository {
+    suspend fun getUsers(): List<User>
 }
