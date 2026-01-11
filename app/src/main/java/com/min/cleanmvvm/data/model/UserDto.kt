@@ -1,10 +1,8 @@
 package com.min.cleanmvvm.data.model
 
-import com.min.cleanmvvm.domain.model.User
-
+// 서버 API 응답을 위한 데이터 클래스 (Data Transfer Object)
 data class UserDto(
-    val id: Int,
-    val name: String
-) {
-    fun toDomain() = User(id, name)
-}
+    val id: Long,
+    val name: String,
+    val age: Int
+)
